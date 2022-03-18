@@ -1,0 +1,143 @@
+.main {
+  overflow: auto;
+}
+
+section.banner {
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+  url(../image/banners/benner_01.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  /* background-attachment: fixed; */
+  min-block-size: 267px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-end;
+  padding: 10px;
+}
+
+.banner-content {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 20px;
+  inline-size: 858px;
+  block-size: 174.21px;
+}
+
+.movie-poster {
+  block-size: 174.21px;
+}
+
+.movie-image {
+  block-size: 100%;
+}
+
+.movie-detail {
+  color: var(--color-light);
+}
+
+.movie-name {
+  font-weight: bold;
+  font-size: 0.875rem;
+  margin-block-end: 18px;
+}
+
+.movie-paragraph {
+  inline-size: 100%;
+  margin-block-end: 27px;
+  text-align: justify;
+}
+
+.movie-buttons {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+  inline-size: 120px;
+}
+
+.list-movies {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
+
+.movie-buttons img {
+  block-size: 20px;
+  inline-size: auto;
+}
+
+.section-movies {
+  color: var(--color-light);
+  padding: 10px;
+  inline-size: 100%;
+}
+
+.section-movie-title {
+  color: var(--color-light);
+  font-size: 0.625rem;
+}
+
+.section-movie-title {
+  margin-block-end: 5px;
+}
+
+.carousel {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  max-inline-size: 1005px;
+  overflow: auto;
+}
+
+.carousel .card {
+  inline-size: 150px;
+  block-size: auto;
+}
+
+.card-image {
+  inline-size: 150px;
+}
+
+.card-image img {
+  inline-size: 100%;
+}
+
+.card-title {
+  font-weight: lighter;
+  font-size: 0.625rem;
+  color: var(--color-light);
+}
+
+.children {
+  display: flex;
+  gap: 10px;
+}
+
+.children-description {
+  color: var(--color-light);
+}
+.children-image {
+  block-size: 234px;
+  inline-size: auto;
+}
+
+.children-image img {
+  block-size: 100%;
+  /* inline-size: auto; */
+}
+
+.children-description {
+  inline-size: 417px;
+}
+
+.children-title {
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.children-paragraph {
+  font-size: 1.125rem;
+  font-weight: lighter;
+}

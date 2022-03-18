@@ -1,272 +1,322 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="css/style.css">
-    <script src="https://kit.fontawesome.com/842ef3437f.js" crossorigin="anonymous"></script>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Netflix</title>
+  <link rel="stylesheet" href="./css/style.css">
+  <script src="https://kit.fontawesome.com/842ef3437f.js" crossorigin="anonymous"></script>
 </head>
+
 <body>
-    <header>
-    </header>
-
-    <div class="menu">
-      <div class="menu-container">
+  <div class="menu-vertical wrapper-menu">
+    <div class="menu-content">
+      <div class="menu-top">
         <div class="language_menu">
-            <img class="img-peru" src="image/peru.png"> 
-            <div class="text-lang">
-                <font size="3">Español</font>
-            </div>
-            <div class="img-hbg">
-                <img class="img-hamburger" src="image/hamburger.png">
-            </div> 
+          <a href="javascript:;" class="lang">
+            <figure>
+              <img class="language_menu_img" src="./image/peru.png">
+            </figure>
+            <div class="language_menu_country">Español</div>
+            <img src="./image/icons/vector.svg" width="10.31">
+          </a>
+          <figure>
+            <a href="javascript:;">
+              <img class="icon-hamburger" src="./image/icons/hamburger.svg">
+            </a>
+          </figure>
         </div>
+        <figure class="menu_logo">
+          <img class="logo" src="./image/logo/logo-netflix.svg" alt="Logo de Netflix">
+        </figure>
 
-        <div class="logo">
-            <img class="img-logo" src="image/Logo.png" alt="">
+        <div class="profile">
+          <div class="profile-avatar">
+            <img src="./image/avatars/avatar01.svg" alt="Avatar user">
+            <div class="active-user"></div>
+          </div>
+          <span class="profile-name">Dev FreeMax</span>
+          <hr class="line-separate">
+          <div class="profile-edit">
+            <a href="javascript:;" class="profile-edit-link">
+              Profile
+              <img src="./image/icons/edit.svg" alt="Icon edit">
+            </a>
+          </div>
         </div>
+        <nav class="nav">
+          <ul class="menu">
+            <li class="menu-item">
+              <a href="#" class="menu-link">
+                <svg height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M8.03451 0.221784C7.96481 0.151508 7.88188 0.0957289 7.79052 0.0576634C7.69915 0.019598 7.60115 0 7.50217 0C7.40319 0 7.30519 0.019598 7.21382 0.0576634C7.12245 0.0957289 7.03952 0.151508 6.96982 0.221784L0.221784 6.96982C0.151508 7.03952 0.0957289 7.12245 0.0576634 7.21382C0.019598 7.30519 0 7.40319 0 7.50217C0 7.60115 0.019598 7.69915 0.0576634 7.79052C0.0957289 7.88188 0.151508 7.96481 0.221784 8.03451C0.291844 8.104 0.374932 8.15898 0.466283 8.19629C0.557635 8.23361 0.655453 8.25252 0.754129 8.25195H1.50391V13.5004C1.50391 13.8981 1.6619 14.2796 1.94312 14.5608C2.22435 14.842 2.60577 15 3.00348 15H12.0009C12.3986 15 12.78 14.842 13.0612 14.5608C13.3424 14.2796 13.5004 13.8981 13.5004 13.5004V8.25195H14.2502C14.4491 8.25195 14.6398 8.17295 14.7804 8.03234C14.921 7.89173 15 7.70102 15 7.50217C15.0006 7.40349 14.9816 7.30567 14.9443 7.21432C14.907 7.12297 14.852 7.03988 14.7825 6.96982L8.03451 0.221784ZM3.00348 13.5004V6.31001L7.50217 1.81132L12.0009 6.31001V13.5004H3.00348Z"
+                  fill="#fff"/>
+                </svg>
+                <span>Home</span>
+              </a>
+            </li>
+            <li class="menu-item">
+              <a href="#" class="menu-link">
+                <svg height="15" viewBox="0 0 12 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M7.5 0C7.63261 0 7.75979 0.0526784 7.85355 0.146447C7.94732 0.240215 8 0.367392 8 0.5C8 0.632608 8.05268 0.759785 8.14645 0.853553C8.24021 0.947322 8.36739 1 8.5 1C8.63261 1 8.75979 1.05268 8.85355 1.14645C8.94732 1.24021 9 1.36739 9 1.5V2C9 2.13261 8.94732 2.25979 8.85355 2.35355C8.75979 2.44732 8.63261 2.5 8.5 2.5H3.5C3.36739 2.5 3.24021 2.44732 3.14645 2.35355C3.05268 2.25979 3 2.13261 3 2V1.5C3 1.36739 3.05268 1.24021 3.14645 1.14645C3.24021 1.05268 3.36739 1 3.5 1C3.63261 1 3.75979 0.947322 3.85355 0.853553C3.94732 0.759785 4 0.632608 4 0.5C4 0.367392 4.05268 0.240215 4.14645 0.146447C4.24021 0.0526784 4.36739 0 4.5 0L7.5 0Z" fill="white"/>
+                  <path d="M1 2.5C1 2.36739 1.05268 2.24021 1.14645 2.14645C1.24021 2.05268 1.36739 2 1.5 2H2C2.13261 2 2.25979 1.94732 2.35355 1.85355C2.44732 1.75979 2.5 1.63261 2.5 1.5C2.5 1.36739 2.44732 1.24021 2.35355 1.14645C2.25979 1.05268 2.13261 1 2 1H1.5C1.10218 1 0.720644 1.15804 0.43934 1.43934C0.158035 1.72064 0 2.10218 0 2.5V14.5C0 14.8978 0.158035 15.2794 0.43934 15.5607C0.720644 15.842 1.10218 16 1.5 16H10.5C10.8978 16 11.2794 15.842 11.5607 15.5607C11.842 15.2794 12 14.8978 12 14.5V2.5C12 2.10218 11.842 1.72064 11.5607 1.43934C11.2794 1.15804 10.8978 1 10.5 1H10C9.86739 1 9.74021 1.05268 9.64645 1.14645C9.55268 1.24021 9.5 1.36739 9.5 1.5C9.5 1.63261 9.55268 1.75979 9.64645 1.85355C9.74021 1.94732 9.86739 2 10 2H10.5C10.6326 2 10.7598 2.05268 10.8536 2.14645C10.9473 2.24021 11 2.36739 11 2.5V14.5C11 14.6326 10.9473 14.7598 10.8536 14.8536C10.7598 14.9473 10.6326 15 10.5 15H1.5C1.36739 15 1.24021 14.9473 1.14645 14.8536C1.05268 14.7598 1 14.6326 1 14.5V2.5Z" fill="white"/>
+                  <path d="M6.5 6.5C6.5 6.36739 6.44732 6.24021 6.35355 6.14645C6.25979 6.05268 6.13261 6 6 6C5.86739 6 5.74021 6.05268 5.64645 6.14645C5.55268 6.24021 5.5 6.36739 5.5 6.5V8H4C3.86739 8 3.74021 8.05268 3.64645 8.14645C3.55268 8.24021 3.5 8.36739 3.5 8.5C3.5 8.63261 3.55268 8.75979 3.64645 8.85355C3.74021 8.94732 3.86739 9 4 9H5.5V10.5C5.5 10.6326 5.55268 10.7598 5.64645 10.8536C5.74021 10.9473 5.86739 11 6 11C6.13261 11 6.25979 10.9473 6.35355 10.8536C6.44732 10.7598 6.5 10.6326 6.5 10.5V9H8C8.13261 9 8.25979 8.94732 8.35355 8.85355C8.44732 8.75979 8.5 8.63261 8.5 8.5C8.5 8.36739 8.44732 8.24021 8.35355 8.14645C8.25979 8.05268 8.13261 8 8 8H6.5V6.5Z" fill="white"/>
+                </svg>
+                <span>About us</span>
+              </a>
+            </li>
+            <li class="menu-item">
+              <a href="#" class="menu-link">
+                <svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M4.6875 6.5625C4.31666 6.5625 3.95415 6.45253 3.64581 6.24651C3.33746 6.04048 3.09714 5.74764 2.95523 5.40503C2.81331 5.06242 2.77618 4.68542 2.84853 4.32171C2.92088 3.95799 3.09945 3.6239 3.36168 3.36168C3.6239 3.09945 3.95799 2.92088 4.32171 2.84853C4.68542 2.77618 5.06242 2.81331 5.40503 2.95523C5.74764 3.09714 6.04048 3.33746 6.24651 3.64581C6.45253 3.95415 6.5625 4.31666 6.5625 4.6875C6.56188 5.18459 6.36414 5.66114 6.01264 6.01264C5.66114 6.36414 5.18459 6.56188 4.6875 6.5625ZM4.6875 3.75C4.50212 3.74982 4.32085 3.80459 4.16659 3.90741C4.01234 4.01023 3.89203 4.15647 3.82088 4.32765C3.74972 4.49883 3.73091 4.68727 3.76683 4.86913C3.80274 5.051 3.89177 5.21814 4.02266 5.34942C4.15355 5.4807 4.32042 5.57023 4.50217 5.60669C4.68393 5.64315 4.87242 5.62491 5.04381 5.55426C5.21521 5.48362 5.36181 5.36375 5.46509 5.20981C5.56837 5.05586 5.62369 4.87476 5.62406 4.68938C5.62431 4.44065 5.52581 4.202 5.3502 4.02586C5.17458 3.84972 4.93623 3.7505 4.6875 3.75Z" fill="white"/>
+                  <path d="M7.80187 13.7883L1.21219 7.19719C1.03647 7.02153 0.937677 6.7833 0.9375 6.53484V1.875C0.9375 1.62636 1.03627 1.3879 1.21209 1.21209C1.3879 1.03627 1.62636 0.9375 1.875 0.9375H6.53484C6.78346 0.937553 7.02188 1.03636 7.19766 1.21219L13.7883 7.80187C13.964 7.97768 14.0628 8.2161 14.0628 8.46469C14.0628 8.71328 13.964 8.95169 13.7883 9.1275L9.1275 13.7883C9.04044 13.8754 8.93707 13.9445 8.82331 13.9916C8.70954 14.0387 8.5876 14.063 8.46445 14.063C8.34131 14.063 8.21937 14.0387 8.1056 13.9916C7.99183 13.9445 7.88847 13.8754 7.80141 13.7883H7.80187ZM1.875 1.875V6.53531L8.46469 13.125L13.125 8.46469L6.53531 1.875H1.875Z" fill="white"/>
+                </svg>
+                <span>Categories</span>
+              </a>
+            </li>
+            <li class="menu-item">
+              <a href="#" class="menu-link">
+                <svg width="16" height="15" viewBox="0 0 16 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M7.9999 2.74805L7.2829 2.01105C5.5999 0.281049 2.5139 0.878049 1.39989 3.05305C0.876895 4.07605 0.758895 5.55305 1.71389 7.43805C2.63389 9.25305 4.5479 11.427 7.9999 13.795C11.4519 11.427 13.3649 9.25305 14.2859 7.43805C15.2409 5.55205 15.1239 4.07605 14.5999 3.05305C13.4859 0.878049 10.3999 0.280049 8.7169 2.01005L7.9999 2.74805ZM7.9999 15C-7.33311 4.86805 3.27889 -3.03995 7.82389 1.14305C7.88389 1.19805 7.94289 1.25505 7.9999 1.31405C8.05632 1.2551 8.11503 1.19839 8.17589 1.14405C12.7199 -3.04195 23.3329 4.86705 7.9999 15Z" fill="white"/>
+                </svg>
+                <span>Favorities</span>
+              </a>
+            </li>
+            <li class="menu-item">
+              <a href="#" class="menu-link">
+                <svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M8.79416 15C8.90758 15 9.01807 14.964 9.10973 14.8972C9.20138 14.8304 9.26946 14.7362 9.30416 14.6282L9.89345 12.7971C10.141 12.6761 10.3777 12.54 10.6038 12.3868L12.4852 12.7918C12.5962 12.8155 12.7118 12.8033 12.8153 12.7571C12.9189 12.7109 13.0052 12.633 13.0617 12.5346L14.5467 9.96429C14.6034 9.86598 14.6274 9.7522 14.6153 9.63935C14.6031 9.52651 14.5555 9.42044 14.4792 9.33643L13.1881 7.91143C13.2069 7.63818 13.2069 7.36396 13.1881 7.09071L14.4792 5.66357C14.5555 5.57956 14.6031 5.47349 14.6153 5.36065C14.6274 5.2478 14.6034 5.13402 14.5467 5.03571L13.0617 2.46429C13.005 2.36612 12.9187 2.28844 12.8151 2.24242C12.7116 2.19641 12.5961 2.18443 12.4852 2.20821L10.6038 2.61321C10.3788 2.46107 10.141 2.32393 9.89452 2.20286L9.30416 0.371786C9.26946 0.263808 9.20138 0.16963 9.10973 0.102818C9.01807 0.036005 8.90758 3.8147e-06 8.79416 0H5.82416C5.71074 3.8147e-06 5.60025 0.036005 5.5086 0.102818C5.41695 0.16963 5.34887 0.263808 5.31416 0.371786L4.72595 2.20179C4.47911 2.32249 4.24103 2.46033 4.01345 2.61429L2.13309 2.20821C2.02216 2.18453 1.90658 2.19667 1.80299 2.24288C1.6994 2.28909 1.61315 2.36699 1.55666 2.46536L0.0716632 5.03571C0.0149573 5.13402 -0.00906156 5.2478 0.0030699 5.36065C0.0152014 5.47349 0.0628562 5.57956 0.139163 5.66357L1.43023 7.09071C1.41153 7.36325 1.41153 7.63675 1.43023 7.90929L0.139163 9.33643C0.0628562 9.42044 0.0152014 9.52651 0.0030699 9.63935C-0.00906156 9.7522 0.0149573 9.86598 0.0716632 9.96429L1.55666 12.5357C1.6133 12.6339 1.69962 12.7116 1.8032 12.7576C1.90677 12.8036 2.02228 12.8156 2.13309 12.7918L4.01345 12.3857C4.24059 12.5389 4.47845 12.6771 4.72595 12.7982L5.31524 14.6282C5.34983 14.7358 5.41759 14.8298 5.50881 14.8966C5.60003 14.9633 5.71004 14.9995 5.82309 15H8.79309H8.79416ZM8.40202 13.9286H6.21631L5.60774 12.0354L5.19738 11.835C4.99565 11.7363 4.80091 11.6239 4.61452 11.4986L4.23523 11.2414L2.28952 11.6614L1.19666 9.76714L2.53059 8.29071L2.49845 7.83643C2.48305 7.61241 2.48305 7.38759 2.49845 7.16357L2.53059 6.70929L1.19452 5.23286L2.28845 3.33857L4.23416 3.7575L4.61345 3.50143C4.79983 3.37612 4.99458 3.26372 5.19631 3.165L5.60666 2.96464L6.21631 1.07143H8.40416L9.01488 2.96571L9.42416 3.165C9.62568 3.26349 9.82008 3.3759 10.0059 3.50143L10.3842 3.7575L12.331 3.33857L13.4238 5.23286L12.0888 6.70929L12.121 7.16357C12.1364 7.38795 12.1364 7.61312 12.121 7.8375L12.0888 8.29179L13.4249 9.76714L12.331 11.6614L10.3842 11.2436L10.0059 11.4986C9.82009 11.6241 9.62569 11.7365 9.42416 11.835L9.01488 12.0343L8.40309 13.9286H8.40202ZM7.30916 10.7143C8.16164 10.7143 8.97921 10.3756 9.58201 9.77284C10.1848 9.17005 10.5234 8.35248 10.5234 7.5C10.5234 6.64752 10.1848 5.82995 9.58201 5.22716C8.97921 4.62436 8.16164 4.28572 7.30916 4.28572C6.45668 4.28572 5.63912 4.62436 5.03632 5.22716C4.43353 5.82995 4.09488 6.64752 4.09488 7.5C4.09488 8.35248 4.43353 9.17005 5.03632 9.77284C5.63912 10.3756 6.45668 10.7143 7.30916 10.7143ZM7.30916 9.64286C6.74084 9.64286 6.1958 9.41709 5.79393 9.01523C5.39207 8.61337 5.16631 8.06832 5.16631 7.5C5.16631 6.93168 5.39207 6.38664 5.79393 5.98477C6.1958 5.58291 6.74084 5.35714 7.30916 5.35714C7.87748 5.35714 8.42253 5.58291 8.82439 5.98477C9.22626 6.38664 9.45202 6.93168 9.45202 7.5C9.45202 8.06832 9.22626 8.61337 8.82439 9.01523C8.42253 9.41709 7.87748 9.64286 7.30916 9.64286Z" fill="white"/>
+                </svg>
+                <span>Settings</span>
+              </a>
+            </li>
+            <li class="menu-item">
+              <a href="#" class="menu-link">
+                <svg width="17" height="15" viewBox="0 0 17 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M10.1786 15C10.3207 15 10.4569 14.9436 10.5574 14.8431C10.6578 14.7426 10.7143 14.6064 10.7143 14.4643C10.7143 14.3222 10.6578 14.1859 10.5574 14.0855C10.4569 13.985 10.3207 13.9286 10.1786 13.9286H3.21429C2.64596 13.9286 2.10092 13.7028 1.69906 13.3009C1.29719 12.8991 1.07143 12.354 1.07143 11.7857V3.21429C1.07143 2.64596 1.29719 2.10092 1.69906 1.69906C2.10092 1.29719 2.64596 1.07143 3.21429 1.07143H10.1786C10.3207 1.07143 10.4569 1.01499 10.5574 0.914521C10.6578 0.814055 10.7143 0.677795 10.7143 0.535714C10.7143 0.393634 10.6578 0.257373 10.5574 0.156907C10.4569 0.0564413 10.3207 0 10.1786 0H3.21429C2.3618 0 1.54424 0.338647 0.941443 0.941443C0.338647 1.54424 0 2.3618 0 3.21429V11.7857C0 12.6382 0.338647 13.4558 0.941443 14.0586C1.54424 14.6614 2.3618 15 3.21429 15H10.1786ZM11.4064 3.37071C11.4562 3.32082 11.5153 3.28124 11.5804 3.25424C11.6455 3.22723 11.7153 3.21333 11.7857 3.21333C11.8562 3.21333 11.926 3.22723 11.991 3.25424C12.0561 3.28124 12.1152 3.32082 12.165 3.37071L15.915 7.12071C15.9649 7.17048 16.0045 7.22959 16.0315 7.29468C16.0585 7.35976 16.0724 7.42953 16.0724 7.5C16.0724 7.57046 16.0585 7.64024 16.0315 7.70532C16.0045 7.77041 15.9649 7.82952 15.915 7.87929L12.165 11.6293C12.1152 11.6791 12.0561 11.7186 11.991 11.7456C11.9259 11.7725 11.8562 11.7864 11.7857 11.7864C11.7153 11.7864 11.6455 11.7725 11.5804 11.7456C11.5154 11.7186 11.4562 11.6791 11.4064 11.6293C11.3566 11.5795 11.3171 11.5203 11.2902 11.4553C11.2632 11.3902 11.2493 11.3204 11.2493 11.25C11.2493 11.1796 11.2632 11.1098 11.2902 11.0447C11.3171 10.9797 11.3566 10.9205 11.4064 10.8707L14.2425 8.03571H4.82143C4.67935 8.03571 4.54309 7.97927 4.44262 7.87881C4.34216 7.77834 4.28571 7.64208 4.28571 7.5C4.28571 7.35792 4.34216 7.22166 4.44262 7.12119C4.54309 7.02073 4.67935 6.96429 4.82143 6.96429H14.2425L11.4064 4.12929C11.3565 4.07952 11.317 4.02041 11.29 3.95532C11.2629 3.89024 11.249 3.82046 11.249 3.75C11.249 3.67953 11.2629 3.60976 11.29 3.54468C11.317 3.47959 11.3565 3.42048 11.4064 3.37071Z" fill="white"/>
+                </svg>
+                <span>Exit</span>
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </div>
 
-   
-       <div class="profile">
-            <img src="image/profile.png" alt="img-avatar">
-            <div class="active">
-            </div>
-        </div>
-        <div class="name-profile">
-           <h2><center>Hernan</center> </h2>
-        </div>
-
-        <hr>
-        <div class="text-profile">
-            <h2>Profile <i class="fa-solid fa-pen-to-square"></i></h2>
-        </div>
-
-        <div class="options__menu">	
-            <ul>
-              <li>
-                <a href="#" class="selected">
-                <i class="fas fa-home" title="Inicio"></i>
-                  <span> Home</span>
-                </a>
-              </li>
-
-              <li>
-                <a href="#" >
-                    <i class="fa-solid fa-address-card"></i>
-                    <span> About us</span>
-                </a>
-              </li>
-
-              <li>
-                <a href="#" >
-                    <i class="fas fa-video" title="Cursos"></i>
-                    <span> Categories</span>
-                </a>
-              </li>
-
-              <li>
-                <a href="#" >
-                    <i class="fa-solid fa-star"></i>
-                    <span> Favorities</span>
-                </a>
-              </li>
-
-              <li>
-                <a href="#" >
-                    <i class="fa-solid fa-gear"></i>
-                    <span> Settings</span>
-                </a>
-              </li>
-
-              <li>
-                <a href="#" >
-                    <i class="fa-solid fa-arrow-right-from-bracket"></i>
-                    <span> Exit</span>
-                </a>
-              </li>
-            </ul>
-        </div>
-
-        <div class="personal-information">
-            <p>
-                MIS DATOS
-                <br>            
-                <span class="text-personal">Name</span> &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp     Hernan <br>
-                <span class="text-personal">Last Name</span> &nbsp &nbsp  Cordova  <br>
-                <span class="text-personal">N° Phone</span> &nbsp &nbsp &nbsp   979820536 <br>
-                <span class="text-personal">N° Card</span> &nbsp &nbsp &nbsp &nbsp XXXXXXXXXXX05                              
-            </p> 
-        </div>
-     </div>  
+      <div class="personal-information">
+        <h3 class="personal-information-title">PERSONAL INFORMATION</h3>
+        <table class="table-information">
+          <tbody>
+            <tr>
+              <td>Name</td>
+              <td>Fredy Max</td>
+            </tr>
+            <tr>
+              <td>Last Name</td>
+              <td>Chavez Loyola</td>
+            </tr>
+            <tr>
+              <td>N° Phone</td>
+              <td>+51 951-557-314</td>
+            </tr>
+            <tr>
+              <td>N° Card</td>
+              <td>XXXXXXXXXXXXX030</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
     </div>
+  </div>
 
-    <div class="main">
-        <div class="banner">
-            <img class="img-banner" src="image/banner.png" alt="">
-            <div class="img-decription"> 
-                <!-- <img src="image/img-banner.png" width="309" height="174.21" alt=""> -->
-               
-                <div class="row-profile-kids">
-                    <div class="banner-card1">
-                        <img class="img-banner-card1" src="image/img-banner.png"  alt="">       
-                    </div> 
-                    <div class="banner-card2">
-                        <h2>Harry Potter y la piedra filosofal </h2>      
-                        <p>Harry Potter has been orphaned and lives at the home of his abominable aunt, uncle, and
-                            unbearable cousin Dudley. Harry feels very sad and lonely, until one day he receives a letter that will change his life forever.
-                            one day he receives a letter that will change his life forever. In it, he is informed that
-                            accepted as a student at Hogwarts School of Witchcraft and Wizardry.
-                            wizardry. From that moment on, Harry's luck takes a spectacular turn.
-                            spectacular. In this special school he will learn enchantments, tricks...
-                        </p>
-                        <h2>
-                            <i class="fa-solid fa-circle-play"></i>
-                            <i class="fa-solid fa-heart"></i>
-                            <i class="fa-solid fa-clock"></i>
-                            <img style="margin-top: 5px;"  src="image/list-plus.svg" height="15px" width="15px" alt="">
-                        </h2>
-                    </div>
-                </div>
-            </div>
-
-
-           
-
+  <main class="main">
+    <section class="banner">
+      <div class="banner-content movie">
+        <figure class="movie-poster">
+          <img class="movie-image" src="./image/img-banner.png" alt="">
+        </figure>
+        <div class="movie-detail">
+          <h2 class="movie-name">Harry Potter y la piedra filosofal</h2>
+          <div class="movie-paragraph">
+            <p>
+              Harry Potter has been orphaned and lives at the home of his abominable aunt, uncle, and
+              unbearable cousin Dudley. Harry feels very sad and lonely, until one day he receives a letter that will
+              change his life forever.
+              one day he receives a letter that will change his life forever. In it, he is informed that
+              accepted as a student at Hogwarts School of Witchcraft and Wizardry.
+              wizardry. From that moment on, Harry's luck takes a spectacular turn.
+              spectacular. In this special school he will learn enchantments, tricks...
+            </p>
+          </div>
+          <div class="movie-buttons">
+            <a href="javascript:;">
+              <img src="./image/icons/movie-play.svg" alt="Icon movie play">
+            </a>
+            <a href="javascript:;">
+              <img src="./image/icons/movie-heart.svg" alt="Icon movie heart">
+            </a>
+            <a href="javascript:;">
+              <img src="./image/icons/movie-time.svg" alt="Icon movie time">
+            </a>
+            <a href="javascript:;">
+              <img src="./image/icons/movie-list-plus.svg" alt="Icon movie list plus">
+            </a>
+          </div>
         </div>
-        
-        <div class="container">
-            <div class="heading">
-              <h2>Series</h2>
+      </div>
+    </section>
+
+
+    <section class="list-movies">
+      <div class="movies">
+        <section class="section-movies">
+          <div class="section-movie-title">
+            <h3>Series</h3>
+          </div>
+          <div class="carousel">
+            <div class="card">
+              <div class="card-image">
+                <img src="./image/darevil.png" alt="">
+              </div>
+              <div class="card-title">
+                <small>Darevil</small>
+              </div>
             </div>
-            <div class="row">
-              <div class="card">
-                <div class="card-header">
-                  <img class="img-cards" src="image/darevil.png" alt="">       
-                </div>
-                <div class="card-body">
-                    <small>Darevil</small>
-                </div>
+            <div class="card">
+              <div class="card-image">
+                <img src="./image/spider-man.png" alt="">
               </div>
-              <div class="card">
-                <div class="card-header">
-                  <img class="img-cards" src="image/spider-man.png" alt="">       
-                </div>
-                <div class="card-body">
-                    <small>Spider man</small>
-                </div>
+              <div class="card-title">
+                <small>Spider man</small>
               </div>
-              <div class="card">
-                <div class="card-header">
-                  <img class="img-cards" src="image/venom.png" alt="">       
-                </div>
-                <div class="card-body">
-                    <small>Venom</small>
-                </div>
-              </div>
-              <div class="card">
-                <div class="card-header">
-                  <img class="img-cards" src="image/casa-papel.png" alt="">       
-                </div>
-                <div class="card-body">
-                    <small>La casa de papel</small>
-                </div>
-              </div>
-              <div class="card">
-                <div class="card-header">
-                  <img class="img-cards" src="image/elite.png" alt="">       
-                </div>
-                <div class="card-body">
-                    <small>Élite</small>
-                </div>
-              </div>
-              <div class="card">
-                <div class="card-header">
-                  <img class="img-cards" src="image/suits.png" alt="">       
-                </div>
-                <div class="card-body">
-                    <small>Suits</small>
-                </div>
-              </div> 
             </div>
+            <div class="card">
+              <div class="card-image">
+                <img src="./image/venom.png" alt="">
+              </div>
+              <div class="card-title">
+                <small>Venom</small>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card-image">
+                <img src="./image/casa-papel.png" alt="">
+              </div>
+              <div class="card-title">
+                <small>La casa de papel</small>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card-image">
+                <img src="./image/elite.png" alt="">
+              </div>
+              <div class="card-title">
+                <small>Élite</small>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card-image">
+                <img src="./image/suits.png" alt="">
+              </div>
+              <div class="card-title">
+                <small>Suits</small>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card-image">
+                <img src="./image/movies/movie07.png" alt="">
+              </div>
+              <div class="card-title">
+                <small>Dead Pool</small>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="section-movies">
+          <div class="section-movie-title">
+            <h3>Más populares</h3>
+          </div>
+          <div class="carousel">
+            <div class="card">
+              <div class="card-image">
+                <img src="./image/suits.png" alt="">
+              </div>
+              <div class="card-title">
+                <small>Suits</small>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card-image">
+                <img src="./image/venom.png" alt="">
+              </div>
+              <div class="card-title">
+                <small>Venom</small>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card-image">
+                <img src="./image/casa-papel.png" alt="">
+              </div>
+              <div class="card-title">
+                <small>La casa de papel</small>
+              </div>
+            </div>            
+            <div class="card">
+              <div class="card-image">
+                <img src="./image/elite.png" alt="">
+              </div>
+              <div class="card-title">
+                <small>Élite</small>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card-image">
+                <img src="./image/movies/movie07.png" alt="">
+              </div>
+              <div class="card-title">
+                <small>Dead Pool</small>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card-image">
+                <img src="./image/darevil.png" alt="">
+              </div>
+              <div class="card-title">
+                <small>Darevil</small>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card-image">
+                <img src="./image/spider-man.png" alt="">
+              </div>
+              <div class="card-title">
+                <small>Spider man</small>
+              </div>
+            </div>  
+          </div>
+        </section>
+      </div>
+      <div class="children">
+        <figure class="children-image">
+          <img src="./image/childrens.svg" alt="">
+        </figure>
+        <div class="children-description">
+          <h2 class="children-title">Crea perfiles para niños.</h2>
+          <p class="children-paragraph">
+            Los niños vivirán aventuras con sus personajes favoritos en un espacio diseñado
+            exclusivamente para ellos, sin costo con tu membresía.
+          </p>
         </div>
-
-        <div class="container">
-            <div class="heading">
-              <h2>Más populares</h2>
-            </div>
-            <div class="row">
-              <div class="card">
-                <div class="card-header">
-                  <img class="img-cards" src="image/suits.png" alt="">       
-                </div>
-                <div class="card-body">
-                    <small>Suits</small>
-                </div>
-              </div> 
-              <div class="card">
-                <div class="card-header">
-                  <img class="img-cards" src="image/venom.png" alt="">       
-                </div>
-                <div class="card-body">
-                    <small>Venom</small>
-                </div>
-              </div>
-              <div class="card">
-                <div class="card-header">
-                  <img class="img-cards" src="image/casa-papel.png" alt="">       
-                </div>
-                <div class="card-body">
-                    <small>La casa de papel</small>
-                </div>
-              </div>
-              <div class="card">
-                <div class="card-header">
-                  <img class="img-cards" src="image/elite.png" alt="">       
-                </div>
-                <div class="card-body">
-                    <small>Élite</small>
-                </div>
-              </div>
-              <div class="card">
-                <div class="card-header">
-                  <img class="img-cards" src="image/darevil.png" alt="">       
-                </div>
-                <div class="card-body">
-                    <small>Darevil</small>
-                </div>
-              </div>
-              <div class="card">
-                <div class="card-header">
-                  <img class="img-cards" src="image/dead-pol.png" alt="">       
-                </div>
-                <div class="card-body">
-                    <small>Dead Pool</small>
-                </div>
-              </div>
-            </div>
-        </div>
-        <div class="container-profile-kids">
-            <div class="row-profile-kids">
-                <div class="card1">
-                    <img class="img-card1" src="image/crea-perfiles.png"  alt="">       
-                </div> 
-                <div class="card2">
-                  <div class="card-body">
-                    <h2>Crea perfiles para niños.</h2>      
-                    <p>Los niños vivirán aventuras con sus personajes
-                        favoritos en un espacio diseñado
-                        exclusivamente para ellos, sin costo con tu
-                        membresía.
-                    </p>
-                  </div>
-                </div>
-            </div>
-         </div>
+      </div>
+    </section>
 
 
-      
-    
+  </main>
+
+
+
+
 </body>
+
 </html>
